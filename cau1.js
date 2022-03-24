@@ -2,11 +2,17 @@
  let x;
  function findX(a,b){
      if(a==0){
-        x = -b;   
+        if(b==0){
+         console.log("phuong trinh vo so nghiem");  
+        }else{
+         console.log("phuong trinh vo nghiem");  
+        }
+      
      }else{
         x = -b/a;
+        console.log(x);
      }
-     console.log(x);
+     
  }
  findX(5,8);
  findX(0,3);
